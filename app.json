@@ -16,7 +16,10 @@
     },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.prince2412.tether"
+      "bundleIdentifier": "com.prince2412.tether",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "com.prince2412.tether"
