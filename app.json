@@ -3,6 +3,7 @@
     "name": "Tether",
     "slug": "tether",
     "version": "1.0.0",
+    "owner": "prince2412",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "tether",
@@ -33,6 +34,11 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "07435c7b-0ec5-4aa3-9c96-91aad02fe739"
+      }
     }
   }
 }
