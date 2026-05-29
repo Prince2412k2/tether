@@ -1,0 +1,27 @@
+kind = "mobile"
+previewPath = "/"
+title = "Tether"
+version = "1.0.0"
+id = "artifacts/tether"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/" ]
+localPort = 18129
+
+[services.development]
+run = "pnpm --filter @workspace/tether run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/tether", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/tether", "run", "serve" ]
+
+[services.env]
+PORT = "18129"
+BASE_PATH = "/"
