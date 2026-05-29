@@ -15,9 +15,12 @@
       "backgroundColor": "#09090B"
     },
     "ios": {
-      "supportsTablet": false
+      "supportsTablet": false,
+      "bundleIdentifier": "com.prince2412.tether"
     },
-    "android": {},
+    "android": {
+      "package": "com.prince2412.tether"
+    },
     "web": {
       "favicon": "./assets/images/icon.png"
     },
